@@ -1,4 +1,4 @@
-title:            Blog Title
+title:            Codemonkey
 description:      Describe your website here.
 # put your disqus here
 disqus_shortname: 
@@ -8,7 +8,7 @@ logo:             images/logo.png # logo visible in the topbar
 # Your site's domain goes here (eg: //mmistakes.github.io, http://mademistakes.com, etc)
 # When testing locally leave blank or use http://localhost:4000
 
-url: http://aronbordin.com/neo-hpstr-jekyll-theme
+#url: https://github.com/malpka/neo-hpstr-jekyll-theme
 
 # draw your top menu here
 # each item must have a title and a url.
@@ -81,7 +81,7 @@ sass:
   style: compressed
 
 # https://github.com/mojombo/jekyll/wiki/Permalinks
-permalink:   /:categories/:title/
+permalink:   /:year/:month/:day/:title/
 
 # Amount of post to show on home page
 paginate: 5
@@ -90,18 +90,21 @@ paginate: 5
 float_share: true
 
 kramdown:
-  auto_ids: true
-  footnote_nr: 1
-  entity_output: as_char
-  toc_levels: 1..6
-  enable_coderay: true
+    auto_ids: true
+    footnote_nr: 1
+    entity_output: as_char
+    toc_levels: 1..6
+    syntax_highlighter: rogue
+    syntax_highlighter_opts:
+        line_numbers: nil
+        line_numbers_start: 1
+        tab_width: 4
+        bold_every: 10
+        css: class
 
-  coderay:
-    coderay_line_numbers: nil
-    coderay_line_numbers_start: 1
-    coderay_tab_width: 4
-    coderay_bold_every: 10
-    coderay_css: class
+# enable_coderay: true
+# coderay:
+
 
 # Octopress
 # Default extensions
