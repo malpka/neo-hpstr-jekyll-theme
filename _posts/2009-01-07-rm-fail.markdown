@@ -1,0 +1,40 @@
+---
+layout: post
+title: "RM fail"
+date: 2009-01-07 22:18
+comments: true
+categories:
+- Linux
+- Techblog
+---
+<p>Dziwne, nigdy nie przypuszczałem, że taka podstawowa komenda jak rm może się nie powieść (oczywiście bez szczególnych przypadków jak uprawnienia czy brak pliku ... ;) )</p>
+<p><code>quiz:/var/spool/mqueue-client# <b>rm *</b><br>
+-bash: /bin/rm: <b>Lista argumentów za długa</b></code></p>
+<EXCERPT><p>hmmm</p>
+<p><code>quiz:/var/spool/mqueue-client# ls -1 | wc<br>
+13625 13625 231625</code></p>
+<p>Trochę ponad 10k plików i się remik gubi.<br>
+Powodem był 'odrobinkę' nieskonfigurowany sendmail</p>
+<p>Rozwiązaniem może być na przykład skorzystanie z xargs, który wykonuje polecenie z argumentami podanymi przez stdin:</p>
+<p><code>quiz:/var/spool/mqueue-client# ls -1 | xargs rm ...<br>
+quiz:/var/spool/mqueue-client# ls -1 | wc<br>
+0 0 0</code></p>
+<p>Mały test innego sposobu: <code># for i in `seq 1 13625` ; do echo "666" &gt; $i; done #tworzenie plikow<br>
+...<br>
+# find . -delete</code><br>
+I co się okazuje:<br>
+<code># time find . -delete<br>
+<br>
+real 0m1.421s<br>
+user 0m0.068s<br>
+sys 0m1.336s<br>
+<br>
+<br>
+# time ls -1 | xargs rm<br>
+<br>
+real 0m2.955s<br>
+user 0m0.440s<br>
+sys 0m2.400s</code><br>
+Podczas sprawdzania zauważyłem, że pliki za pierwszym razem tworzą się odrobinę dłużej.</p>
+<p>PS. Niech ktoś coś zrobi z tym certyfikatem ...</p>
+		
