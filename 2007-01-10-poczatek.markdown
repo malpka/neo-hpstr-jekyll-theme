@@ -1,0 +1,13 @@
+---
+layout: post
+title: "Początek"
+date: 2007-01-10 23:36
+comments: true
+categories:
+- Ogólne
+---
+<p>Postanowiłem spróbować prowadzić swojego Joggera. Ostrzegam, że wpisy mogą się pojawiać w bardzo nieregularnych odstępach czasowych.</p>
+<p>MJogger powstał, ponieważ chciałem sprawdzić rozwijającą się w otchłani internetu manię blogowania, jak też przetestować działanie serwisów tego typu.<br>
+wydaje mi się też że będzie dobrym miejscem na zapisywanie moich zmagań w dziedzinie zainteresowań i ułatwi mi wyszukiwanie czegoś, co zrobiłem wieki temu a jest mi niezbędnie potrzebne</p>
+<p>Mój wybór padł na Joggera z 2 przyczyn: korzysta z niego <a href="http://quiz.jogger.pl">Quiz</a>, oraz posiada ciekawy sposob dodawania wiadomości (kontakt jabbera)</p>
+		

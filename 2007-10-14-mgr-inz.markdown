@@ -1,0 +1,16 @@
+---
+layout: post
+title: "mgr inż. @"
+date: 2007-10-14 18:50
+comments: true
+categories:
+- Ogólne
+---
+<p>I stało się. 12 października 2007 gdzieś około godziny 14:30 komisja oświadczyła że mogę sobie wstawiać literki przed nazwisko :P Podczas obrony musiałem zachować zimną krew żeby nie stracić wątku. Ciężko się mówi do publiczności jeśli wiesz, że nikt nie słucha;)</p>
+<p>W samej pracy raczej nic odkrywczego.<br></p>
+<blockquote>"Projekt i implementacja systemu informatycznego wspomagającego zarządzanie firmą udostępniającą łącza internetowe"</blockquote>
+<p><br>
+Panel administracyjny (Tomcat, JSP, Struts, Hibernate) miesza w bazie danych (Oracle 10g XE) aby później na jej podstawie wygenerować pliki konfiguracyjne routera dostępowego (iptables, arp, dhcp, tc). Przynajmniej będę się podczas szukania pracy mógł pochwalić znajomością podstaw podstaw J EE.</p>
+<p>
+<p>Wolny wniosek na przyszłość: nie bawić się w debianowe paczki Tomcata tylko uruchamiać te ściągniętą z <a href="http://tomcat.apache.org">http://tomcat.apache.org</a>. Wersje deb mają jakiś problem z prawami dostępu</p>
+		

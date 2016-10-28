@@ -1,0 +1,32 @@
+Working OpenVPN on ZyXEL NSA325-v2 V4.80(AALS.1)
+
+Install FFP as zypkg
+http://zyxel.nas-central.org/wiki/FFP_as_zypkg
+
+echo ftp://ftp.zyxel-tech.de/2.new_mirror/NSA325-v2/4.40/zypkg/ >> /etc/package_src_url
+or even
+echo ftp://ftp.zyxel-tech.de/2.new_mirror/NSA325-v2/4.40/zypkg/ > /etc/package_src_url
+
+
+Install uwsiteloader.sh to easily manage repositories 
+https://nas-tweaks.net/373/uwsiteloader-tool-to-download-the-sites-definitions-for-packages-of-the-fun_plug-0-7/
+
+wget http://wolf-u.li/u/441 -O /ffp/bin/uwsiteloader.sh
+chmod a+x /ffp/bin/uwsiteloader.sh
+
+
+Add new repos:
+- fonz
+- Mizelf
+- Uli
+- barmalej2
+- Arie
+
+Install packages by slacker
+
+br2:lzo-2.06-arm-1
+module_utils-1.20.2-arm-1
+s:openssl-1.0.2d-arm-2
+uli:openvpn-2.3.10-arm-3
+uli:zlib-1.2.8-arm-1
+mz:zyxel_modules-2.6.31.8-arm-4
